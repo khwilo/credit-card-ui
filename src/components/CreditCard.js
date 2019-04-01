@@ -5,12 +5,27 @@ const CreditCard = ({ cardInfo }) => {
     const { firstName, lastName }                          = person;
     const firstNumber                                      = cardNumber.split(" ")[0];
     return (
-        <div>
-            <p>{bankName}</p>
-            <p>{cardNumber}</p>
-            <p>{firstNumber}</p>
-            <p><span>VALID THRU</span> {expirationDate}</p>
-            <p>{firstName} {lastName}</p>
+        <div className="container">
+            <div className="bankNameInfo">
+                <p>{bankName}</p>
+            </div>
+            <div className="cardNumberInfo">
+                <p>{cardNumber}</p>
+            </div>
+            <div className="firstNumberInfo">
+                <p>{firstNumber}</p>
+            </div>
+            <div className="expirationDateInfo">
+                <div className="dateLabel">
+                    <p>valid thru</p>
+                </div>
+                <div className="expirationDate">
+                    <p>{expirationDate}</p>
+                </div>
+            </div>
+            <div className="cardHolderNameInfo">
+                <p>{firstName} {lastName}</p>
+            </div>
         </div>
     );
 };
