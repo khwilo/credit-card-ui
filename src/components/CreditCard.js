@@ -3,21 +3,25 @@ import React from 'react';
 const CreditCard = ({ cardInfo }) => {
     const { person, expirationDate, cardNumber, bankName } = cardInfo;
     const { firstName, lastName }                          = person;
-    const firstNumber                                      = cardNumber.split(" ")[0];
+    const [firstNo, secondNo, thirdNo, fourthNo]           = cardNumber.split(" ");
     return (
         <div className="container">
             <div className="bankNameInfo">
                 <p>{bankName}</p>
             </div>
             <div className="cardNumberInfo">
-                <p>{cardNumber}</p>
+                <p>{firstNo}</p>
+                <p>{secondNo}</p>
+                <p>{thirdNo}</p>
+                <p>{fourthNo}</p>
             </div>
             <div className="firstNumberInfo">
-                <p>{firstNumber}</p>
+                <p>{firstNo}</p>
             </div>
             <div className="expirationDateInfo">
                 <div className="dateLabel">
-                    <p>valid thru</p>
+                    <p>valid</p>
+                    <p>thru</p>
                 </div>
                 <div className="expirationDate">
                     <p>{expirationDate}</p>
