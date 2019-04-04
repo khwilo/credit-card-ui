@@ -6,33 +6,61 @@ body {
 
 .container {
   border-radius   : 20px;
-  display         : grid;
-  width           : 60%;
-  height          : 80vh;
+  width           : 40%;
   margin          : 0 auto;
-  padding         : 5px;
+  padding         : 40px 30px 10px 30px;
   background-color: #0b62ed;
   color           : #ffffff;
   line-height     : 0ch;
+  display         : grid;
+}
+
+.bankNameInfo {
+  display        : flex;
+  justify-content: flex-end;
+  margin-bottom  : 20px;
+}
+
+.cardNumberInfo {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.firstNumberInfo {
+  display        : flex;
+  justify-content: flex-start;
+}
+
+.expirationDateInfo {
+  display        : flex;
+  justify-content: center;
+}
+
+.dateLabel {
+  margin-right: 5px;
 }
 
 .bankNameInfo p {
   font-size  : 50px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
-.cardNumberInfo p, .expirationDate p, .cardHolderNameInfo p {
+.cardNumberInfo p {
+  font-size: 40px;
+}
+
+.expirationDate p{
+  font-size: 25px;
+}
+
+.cardHolderNameInfo p {
   font-size: 30px;
 }
 
-.firstNumberInfo p {
-  font-size: 20px;
+.firstNumberInfo p, .dateLabel p {
+  font-size: 15px;
 }
 
 .cardHolderNameInfo p, .dateLabel p {
   text-transform: uppercase;
-}
-
-.dateLabel p {
-  font-size: 20px;
 }
