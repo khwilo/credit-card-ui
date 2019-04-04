@@ -1,15 +1,11 @@
-body {
-  font-family            : "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing : antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Source+Sans+Pro");
 
 .container {
   border-radius   : 20px;
   width           : 40%;
   margin          : 0 auto;
-  padding         : 40px 30px 10px 30px;
-  background-color: #0b62ed;
+  padding         : 20px 30px 10px 30px;
+  background-color: #22509b;
   color           : #ffffff;
   line-height     : 0ch;
   display         : grid;
@@ -18,7 +14,11 @@ body {
 .bankNameInfo {
   display        : flex;
   justify-content: flex-end;
-  margin-bottom  : 20px;
+  margin-bottom  : 60px;
+}
+
+.bankNameInfo, .dateLabel {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .cardNumberInfo {
@@ -29,6 +29,10 @@ body {
 .firstNumberInfo {
   display        : flex;
   justify-content: flex-start;
+}
+
+.cardNumberInfo, .firstNumberInfo, .expirationDate p, .cardHolderNameInfo p  {
+  font-family: 'Cutive Mono', monospace;
 }
 
 .expirationDateInfo {
@@ -46,18 +50,25 @@ body {
 }
 
 .cardNumberInfo p {
-  font-size: 40px;
+  font-size  : 40px;
+  font-weight: bold;
 }
 
 .expirationDate p{
-  font-size: 25px;
+  font-size  : 25px;
+  font-weight: bold;
 }
 
 .cardHolderNameInfo p {
-  font-size: 30px;
+  font-size  : 30px;
+  font-weight: bold;
 }
 
-.firstNumberInfo p, .dateLabel p {
+.firstNumberInfo p {
+  font-size: 22px;
+}
+
+.dateLabel p {
   font-size: 15px;
 }
 
